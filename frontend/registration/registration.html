@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SHRA Technology | Free Week Registration</title>
+
+    <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+
+    <main class="registration-page">
+
+        <div class="registration-container">
+
+            <!-- Header -->
+            <div class="form-header">
+
+                <div class="logo">
+                    <img src="../../Image/logo-shra.png" alt="logo">
+                </div>
+
+                <div class="logo">
+                    SHRA <span>Technology</span>
+                </div>
+
+                <h1>1 Week Free Class</h1>
+
+                <p>
+                    Register yourself for SHRA Technology's
+                    upcoming free learning week.
+                </p>
+
+            </div>
+
+
+            <!-- Registration Form -->
+            <form id="registrationForm">
+
+                <!-- Name -->
+                <div class="form-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" autocomplete="name"
+                        required>
+
+                </div>
+
+
+                <!-- Mobile Number -->
+                <div class="form-group">
+
+                    <label for="mobile">
+                        Mobile Number
+                    </label>
+
+                    <input type="tel" id="mobile" name="mobile" placeholder="Enter 10-digit mobile number"
+                        maxlength="10" inputmode="numeric" autocomplete="tel" required>
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input type="email" id="email" name="email" placeholder="Enter your email address"
+                        autocomplete="email" required>
+
+                </div>
+
+
+                <!-- College -->
+                <div class="form-group">
+
+                    <label for="college">
+                        College
+                    </label>
+
+                    <input type="text" id="college" name="college" placeholder="Enter your college name"
+                        autocomplete="organization" required>
+
+                </div>
+
+
+                <!-- Current Course -->
+                <div class="form-group">
+
+                    <label for="currentCourse">
+                        Current Course
+                    </label>
+
+                    <input type="text" id="currentCourse" name="currentCourse"
+                        placeholder="e.g. 12th,Diploma, BCA, B.Tech, MCA, B.Sc" required>
+
+                </div>
+
+
+                <!-- Registration Date -->
+                <div class="form-group">
+
+                    <label for="registrationDate">
+                        Registration Date
+                    </label>
+
+                    <input type="date" id="registrationDate" name="registrationDate" readonly>
+
+                </div>
+
+
+                <!-- Submit -->
+                <button type="submit" id="submitBtn" class="submit-btn">
+                    Register for Free Week
+                </button>
+
+
+                <!-- Status Message -->
+                <div id="formMessage" class="form-message" role="alert"></div>
+
+            </form>
+
+        </div>
+
+        <!-- =========================
+     REGISTRATION SUCCESS OVERLAY
+========================= -->
+
+        <div class="success-overlay" id="successOverlay">
+
+            <div class="success-card">
+
+                <div class="success-icon">
+                    ✓
+                </div>
+
+                <h2>
+                    Registration Successful! 🎉
+                </h2>
+
+                <p class="success-subtitle">
+                    Congratulations! Your registration for
+                    SHRA Technology's 1 Week Free Class is confirmed.
+                </p>
+
+                <div class="student-details">
+
+                    <div class="detail-row">
+                        <span>Registration ID</span>
+                        <strong id="successRegistrationId"></strong>
+                    </div>
+
+                    <div class="detail-row">
+                        <span>Name</span>
+                        <strong id="successName"></strong>
+                    </div>
+
+                    <div class="detail-row">
+                        <span>Mobile</span>
+                        <strong id="successMobile"></strong>
+                    </div>
+
+                    <div class="detail-row">
+                        <span>Email</span>
+                        <strong id="successEmail"></strong>
+                    </div>
+
+                    <div class="detail-row">
+                        <span>College</span>
+                        <strong id="successCollege"></strong>
+                    </div>
+
+                    <div class="detail-row">
+                        <span>Current Course</span>
+                        <strong id="successCourse"></strong>
+                    </div>
+
+                    <div class="detail-row">
+                        <span>Registration Date</span>
+                        <strong id="successDate"></strong>
+                    </div>
+
+                </div>
+
+                <div class="success-thanks">
+                    <strong>
+                        Thank You for Registering! ❤️
+                    </strong>
+
+                    <p>
+                        Apne dosto ko bhi SHRA Technology ke
+                        1 Week Free Classes ke baare mein bataiye
+                        aur unhe bhi join karne ke liye invite kijiye. 🚀
+                    </p>
+                </div>
+
+                <div class="success-actions">
+
+                    <button type="button" class="print-btn" id="printBtn">
+                        🖨 Print
+                    </button>
+
+                    <button type="button" class="success-ok-btn" id="successOkBtn">
+                        OK
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="registration.js"></script>
+
+
+</body>
+
+</html>
