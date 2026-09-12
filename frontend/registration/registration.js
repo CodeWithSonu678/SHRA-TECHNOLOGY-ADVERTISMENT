@@ -102,7 +102,7 @@ registrationForm.addEventListener("submit", async (event) => {
 
     submitBtn.textContent = "Registering...";
 
-    const response = await fetch("http://localhost:3000/api/registrations", {
+    const response = await fetch("https://shra-technology-advertisment.onrender.com/api/registrations", {
       method: "POST",
 
       headers: {
