@@ -176,7 +176,7 @@ function showMessage(message, type) {
 ========================= */
 
 successOkBtn.addEventListener("click", () => {
-  window.location.href = "../home/index.html";
+  window.location.href = "/";
 });
 
 // when user click to print
